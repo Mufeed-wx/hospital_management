@@ -453,9 +453,20 @@ body {
 
 .overlay.active {
   opacity: 1;
-  pointer-events: all;
 }
-
+.nav-user{
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.user-icon{
+ display: flex;
+ align-items: center;
+}
+.navbar-user-icon img{
+  width: 30px;
+  height: 30px;
+}
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
@@ -1118,6 +1129,11 @@ body {
 #footer-top {
   padding: 30px;
 }
+.footer-grid{
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 #footer-top .main-logo {
   width: 216px;
   height: 40px;
@@ -1140,6 +1156,12 @@ body {
 }
 .social-icon {
   margin-right: 60px;
+}
+@media (max-width: 600px) {
+  .footer-grid{
+  grid-template-columns: 1fr;
+    gap: 0px;
+}
 }
 /*
 .footer-top {
@@ -1693,5 +1715,55 @@ body {
   .blog-shape {
     top: 0;
     left: 0;
+  }
+}
+
+
+
+/* Video playlist*/
+.close-video{
+  position: fixed;
+  right: 24%;
+  top: 20%;
+  z-index: 10000;
+  color: white;
+  width: 25px;
+  height: 25px;
+}
+.clip{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  transition: 0.5s;
+}
+.clip video{
+  max-width: 800px;
+  max-height: 500px;
+  outline: none;
+  border: 1px solid rgb(255, 255, 255);
+}
+.clip.active{
+  transition-delay: 0.5s;
+transform: translate(-50%,-50%) scale(1);
+}
+@media (max-width:991px){
+  .clip video{
+    max-width:90%;
+  }
+  .close-video{
+    position: fixed;
+    right: 21%;
+    top: 25%;
+    z-index: 10000;
+    color: white;
+    width: 25px;
+    height: 25px;
   }
 }

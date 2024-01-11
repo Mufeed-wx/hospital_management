@@ -152,3 +152,33 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
+
+
+// Form script
+
+const form=document.forms['gform']
+const scriptURL="https://script.google.com/macros/s/AKfycbxgvLLyGcrRQfKR5fucp6spOik-lvtg8Z1G0EgBoYIe5aEpSoWYTeNMl5RRjBvzOwwDAg/exec"
+
+form.addEventListener('submit',e=>{
+  e.preventDefault()
+  fetch(scriptURL,{method:"POST",body:new FormData(form)}).then((response)=>{
+    alert("Thank you! your form is submitted successfully")
+  }).then(()=>{window.location.reload()}).catch(err=>console.log("Error",err.message))
+})
+
+
+// Video script
+
+let btn=document.querySelector(".video-btn")
+let clip=document.querySelector('.clip')
+let video = document.querySelector("video")
+let close=document.querySelector('.close-video')
+btn.onclick=function(){
+  video.play()
+  video.currentTime=0;
+  clip.classList.add('active')
+}
+close.onclick=function(){
+  video.pause()
+  clip.classList.remove('active')
+}

@@ -31,7 +31,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
   <!-- 
     - preload images
@@ -57,48 +57,48 @@
         <img src="./assets/images/logo_trasperent.png" width="162" height="50" alt="EduWeb logo">
       </a>
 
-      <nav class="navbar" data-navbar>
 
-        <div class="wrapper">
-          <a href="#" class="logo">
-            <img src="./assets/images/logo_trasperent.png" width="162" height="50" alt="EduWeb logo">
-          </a>
-
-          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-          </button>
-        </div>
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <a href="#home" class="navbar-link" data-nav-link>Home</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#about" class="navbar-link" data-nav-link>About</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#courses" class="navbar-link" data-nav-link>Course</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
-          </li>
-          <li class="navbar-item">
-            <a href="./client.html" class="navbar-link" data-nav-link>Our Clinets</a>
-          </li>
-
-        </ul>
-
-      </nav>
 
       <div class="header-actions">
+        <nav class="navbar" data-navbar>
+
+          <div class="wrapper">
+            <a href="#" class="logo">
+              <img src="./assets/images/logo_trasperent.png" width="162" height="50" alt="EduWeb logo">
+            </a>
+
+            <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link" data-nav-link>About</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#courses" class="navbar-link" data-nav-link>Course</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+            </li>
+            <li class="navbar-item">
+              <a href="./client.html" class="navbar-link" data-nav-link>Our Clinets</a>
+            </li>
+            <li class="navbar-item user-icon">
+              <a class="navbar-user-icon" href=""><img src="./assets/images/user-icon.png" alt=""></a>
+
+            </li>
+          </ul>
+        </nav>
+
 
         <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
           <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
@@ -154,7 +154,7 @@
               <img src="./assets/images/bg-doctor.png" width="240" height="370" alt="hero banner" class="img-cover">
             </div>
 
-           
+
 
             <img src="./assets/images/hero-shape-2.png" width="622" height="551" alt="" class="shape hero-shape-2">
 
@@ -288,9 +288,9 @@
 
           <figure class="about-banner">
 
-            <div class="img-holder" id="img-holder" >
+            <div class="img-holder" id="img-holder">
               <div class="img-box">
-             <img src="./assets//images/certificate.jpeg" alt="">
+                <img src="./assets//images/certificate.jpeg" alt="">
               </div>
             </div>
             <!-- <img src="./assets/images/about-shape-1.svg" width="360" height="420" loading="lazy" alt=""
@@ -355,7 +355,7 @@
         - #why choose us
       -->
 
-      <section class="section course"  aria-label="course">
+      <section class="section course" aria-label="course">
         <div class="container">
 
 
@@ -402,15 +402,23 @@
 
           </ul>
 
-          <a href="#" class="btn has-before">
+          <!-- <a href="#" class="btn has-before">
             <span class="span">Browse more courses</span>
 
             <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-          </a>
+          </a> -->
 
         </div>
       </section>
 
+
+      <button class="video-btn">Play</button>
+      <div class="clip">
+        <video src="./assets/video/hospital-video.mp4" controls></video>
+        <!-- <b class="close-video">Close</b> -->
+        <img class="close-video" src="./assets/images/video-close.png" alt="">
+      </div>
+    
 
 
 
@@ -452,46 +460,46 @@
         - #draggable company logogs
       -->
       <div class="company-logos ">
-      <div class="wrapper">
-        <i id="left" class="fa-solid fa-angle-left"></i>
-        <ul class="carousel">
-          <li class="card">
-            <div class="img"><img src="./assets/images/draggable-log1.jpg" alt="img" draggable="false"></div>
-          </li>
-          <li class="card">
-            <div class="img"><img src="./assets/images/draggable-log2.jpg" alt="img" draggable="false"></div>
-          </li>
-          <li class="card">
-            <div class="img"><img src="./assets/images/draggable-log3.jpg" alt="img" draggable="false"></div>
-          </li>
-          <li class="card">
-            <div class="img"><img src="./assets/images/draggable-log4.png" alt="img" draggable="false"></div>
-          </li>
-          <li class="card">
-            <div class="img"><img src="./assets/images/draggable-log5.jpg" alt="img" draggable="false"></div>
-          </li>
-          <li class="card">
-            <div class="img"><img src="./assets/images/draggable-log6.jpg" alt="img" draggable="false"></div>
-          </li>
-          <li class="card">
-            <div class="img"><img src="./assets/images/draggable-log7.jpg" alt="img" draggable="false"></div>
-          </li>
-          <li class="card">
-            <div class="img"><img src="./assets/images/draggable-log8.png" alt="img" draggable="false"></div>
-          </li>
-          <li class="card">
-            <div class="img"><img src="./assets/images/draggable-log9.jpg" alt="img" draggable="false"></div>
-          </li>
-          <li class="card">
-            <div class="img"><img src="./assets/images/draggable-log10.png" alt="img" draggable="false"></div>
-          </li>
-          <li class="card">
-            <div class="img"><img src="./assets/images/draggable-log11.png" alt="img" draggable="false"></div>
-          </li>
+        <div class="wrapper">
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <ul class="carousel">
+            <li class="card">
+              <div class="img"><img src="./assets/images/draggable-log1.jpg" alt="img" draggable="false"></div>
+            </li>
+            <li class="card">
+              <div class="img"><img src="./assets/images/draggable-log2.jpg" alt="img" draggable="false"></div>
+            </li>
+            <li class="card">
+              <div class="img"><img src="./assets/images/draggable-log3.jpg" alt="img" draggable="false"></div>
+            </li>
+            <li class="card">
+              <div class="img"><img src="./assets/images/draggable-log4.png" alt="img" draggable="false"></div>
+            </li>
+            <li class="card">
+              <div class="img"><img src="./assets/images/draggable-log5.jpg" alt="img" draggable="false"></div>
+            </li>
+            <li class="card">
+              <div class="img"><img src="./assets/images/draggable-log6.jpg" alt="img" draggable="false"></div>
+            </li>
+            <li class="card">
+              <div class="img"><img src="./assets/images/draggable-log7.jpg" alt="img" draggable="false"></div>
+            </li>
+            <li class="card">
+              <div class="img"><img src="./assets/images/draggable-log8.png" alt="img" draggable="false"></div>
+            </li>
+            <li class="card">
+              <div class="img"><img src="./assets/images/draggable-log9.jpg" alt="img" draggable="false"></div>
+            </li>
+            <li class="card">
+              <div class="img"><img src="./assets/images/draggable-log10.png" alt="img" draggable="false"></div>
+            </li>
+            <li class="card">
+              <div class="img"><img src="./assets/images/draggable-log11.png" alt="img" draggable="false"></div>
+            </li>
 
-        </ul>
-        <i id="right" class="fa-solid fa-angle-right"></i>
-      </div>
+          </ul>
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
       </div>
 
 
@@ -562,15 +570,15 @@
 
             </div>
             <div class="contact-form-container">
-              <form method="post" action="https://script.google.com/macros/s/AKfycbxgvLLyGcrRQfKR5fucp6spOik-lvtg8Z1G0EgBoYIe5aEpSoWYTeNMl5RRjBvzOwwDAg/exec" name="gform" class="contact-form">
+              <form method="post" action="" name="gform" class="contact-form">
                 <div>
                   <input type="text" name="your-name" placeholder="Name">
                 </div>
                 <div>
-                  <input type="text" name="your-number" placeholder="Email">
+                  <input type="text" name="your-number" placeholder="Number">
                 </div>
                 <div>
-                  <input type="email" name="your-email" placeholder="Phone">
+                  <input type="email" name="your-email" placeholder="Email">
                 </div>
                 <div>
                   <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
@@ -581,8 +589,7 @@
           </div>
 
 
-          <img src="./assets/images/blog-shape.png"  height="186" loading="lazy" alt=""
-            class="shape blog-shape">
+          <img src="./assets/images/blog-shape.png" height="186" loading="lazy" alt="" class="shape blog-shape">
 
         </div>
       </section>
@@ -602,12 +609,12 @@
   <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
 
     <div class="footer-top" id="footer-top">
-      <div class=" grid-list">
+      <div class="footer-grid">
 
         <div class="footer-brand" id="footer-brand">
 
           <a href="#">
-            <img class="main-logo"  src="./assets/images/logo_trasperent.png" width="162" height="50" alt="EduWeb logo">
+            <img class="main-logo" src="./assets/images/logo_trasperent.png" width="162" height="50" alt="EduWeb logo">
           </a>
 
           <!-- <p class="footer-brand-text">
@@ -616,15 +623,16 @@
           <ul class="footer-list first-section">
 
             <li>
-            <p>About Us</p>
+              <p>About Us</p>
             </li>
             <li>Settings</li>
             <li class="social-icon"><a href=""><img src="./assets/images/instagram.png" alt=""></a>
               <img src="./assets//images//facebook.png" alt="">
               <img src="./assets/images/youtube.png" alt="">
+              <img src="./assets/images/play-store-icon.png" alt="">
             </li>
 
-  
+
           </ul>
 
 
@@ -634,9 +642,9 @@
         <ul class="footer-list first-section">
 
           <li>
-           <img src="./assets/images/call-icon.png" alt="">
-           <p>
-            +91 484-4063599</p>
+            <img src="./assets/images/call-icon.png" alt="">
+            <p>
+              +91 484-4063599</p>
           </li>
 
           <li>
@@ -649,10 +657,10 @@
             <p>
               2nd Floor, Mythri Buildings, Arangath Road, Pulleppady, Cochin-18</p>
           </li>
-    
+
 
         </ul>
-<!-- 
+        <!-- 
         <ul class="footer-list second-section">
 
         </ul> -->
@@ -675,8 +683,8 @@
     <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
   </a> -->
   <div>
-    <a class="whatsapp-icon" href="https://wa.me/7559040048" whatsapp-btn><img
-        src="./assets/images/whatsapp.png" alt=""></a>
+    <a class="whatsapp-icon" href="https://wa.me/7559040048" whatsapp-btn><img src="./assets/images/whatsapp.png"
+        alt=""></a>
   </div>
 
 
