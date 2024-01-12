@@ -157,7 +157,7 @@ wrapper.addEventListener("mouseleave", autoPlay);
 // Form script
 
 const form=document.forms['gform']
-const scriptURL="https://script.google.com/macros/s/AKfycbxgvLLyGcrRQfKR5fucp6spOik-lvtg8Z1G0EgBoYIe5aEpSoWYTeNMl5RRjBvzOwwDAg/exec"
+const scriptURL="https://script.google.com/macros/s/AKfycbzoeBRwjBy7a-huDIX0AKuTaD7iJ20lnKZXF30JoC_nc5kxwzh3nNJv8FuQyMB4zVfklg/exec"
 
 form.addEventListener('submit',e=>{
   e.preventDefault()
