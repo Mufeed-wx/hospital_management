@@ -1,631 +1,786 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- 
+    <!-- 
     - primary meta tag
   -->
-  <title>camerin spark</title>
-  <meta name="title" content="camerin spark">
-  <meta name="description" content="This is an education html template made by codewithsadee">
+    <title>camerin spark</title>
+    <meta name="title" content="camerin spark" />
+    <meta
+      name="description"
+      content="This is an education html template made by codewithsadee"
+    />
 
-  <!-- 
+    <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo_trasperent_cropped.png" type="image/svg+xml">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo_trasperent_cropped.png"
+      type="image/svg+xml"
+    />
 
-  <!-- 
+    <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!-- 
+    <!-- 
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
 
-  <!-- 
+    <!-- 
     - preload images
   -->
-  <link rel="preload" as="image" href="./assets/images/hero-bg.svg">
-  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
-  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
-  <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg">
-  <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+    <link rel="preload" as="image" href="./assets/images/hero-bg.svg" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg" />
+    <link rel="preload" as="image" href="./assets/images/hero-shape-2.png" />
+  </head>
 
-</head>
-
-<body id="top">
-
-  <!-- 
+  <body id="top">
+    <!-- 
     - #HEADER
   -->
 
-  <header class="header" data-header>
-    <div class="container">
+    <header class="header" data-header>
+      <div class="container">
+        <a href="./index.html" class="logo">
+          <img
+            src="./assets/images/logo_trasperent.png"
+            width="162"
+            height="50"
+            alt="EduWeb logo"
+          />
+        </a>
 
-      <a href="./index.html" class="logo">
-        <img src="./assets/images/logo_trasperent.png" width="162" height="50" alt="EduWeb logo">
-      </a>
+        <div class="header-actions">
+          <nav class="navbar" data-navbar>
+            <div class="wrapper">
+              <a href="./index.html" class="logo">
+                <img
+                  src="./assets/images/logo_trasperent.png"
+                  width="162"
+                  height="50"
+                  alt="EduWeb logo"
+                />
+              </a>
 
+              <button
+                class="nav-close-btn"
+                aria-label="close menu"
+                data-nav-toggler
+              >
+                <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
 
+            <ul class="navbar-list">
+              <li class="navbar-item">
+                <a href="#home" class="navbar-link" data-nav-link>Home</a>
+              </li>
 
-      <div class="header-actions">
-        <nav class="navbar" data-navbar>
+              <li class="navbar-item">
+                <a href="#about" class="navbar-link" data-nav-link>About</a>
+              </li>
 
-          <div class="wrapper">
-            <a href="./index.html" class="logo">
-              <img src="./assets/images/logo_trasperent.png" width="162" height="50" alt="EduWeb logo">
-            </a>
+              <li class="navbar-item">
+                <a href="#courses" class="navbar-link" data-nav-link>Course</a>
+              </li>
 
-            <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-            </button>
-          </div>
-
-          <ul class="navbar-list">
-
-            <li class="navbar-item">
-              <a href="#home" class="navbar-link" data-nav-link>Home</a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="#about" class="navbar-link" data-nav-link>About</a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="#courses" class="navbar-link" data-nav-link>Course</a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
-            </li>
-            <li class="navbar-item">
-              <a href="./client.html" class="navbar-link" data-nav-link>Our Clinets</a>
-            </li>
-            <!-- <li class="navbar-item user-icon">
+              <li class="navbar-item">
+                <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+              </li>
+              <li class="navbar-item">
+                <a href="./client.html" class="navbar-link" data-nav-link
+                  >Our Clinets</a
+                >
+              </li>
+              <!-- <li class="navbar-item user-icon">
               <a class="navbar-user-icon" href=""><img src="./assets/images/user-icon.png" alt=""></a>
 
             </li> -->
-          </ul>
-        </nav>
+            </ul>
+          </nav>
 
+          <button
+            class="header-action-btn"
+            aria-label="open menu"
+            data-nav-toggler
+          >
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
 
-        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
-          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-        </button>
-
+        <div class="overlay" data-nav-toggler data-overlay></div>
       </div>
+    </header>
 
-      <div class="overlay" data-nav-toggler data-overlay></div>
-
-    </div>
-  </header>
-
-
-
-
-
-  <main>
-    <article>
-
-      <!-- 
+    <main>
+      <article>
+        <!-- 
         - #HERO
       -->
 
-      <section class="section hero has-bg-image" id="home" aria-label="home"
-        style="background-image: url('./assets/images/hero-bg.svg')">
-        <div class="container">
+        <section
+          class="section hero has-bg-image"
+          id="home"
+          aria-label="home"
+          style="background-image: url('./assets/images/hero-bg.svg')"
+        >
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 section-title">
+                DIPLOMA IN HOSPITAL<span class="span"
+                  >ADMINISTRATION MANAGEMENT</span
+                >
+              </h1>
 
-          <div class="hero-content">
+              <p class="hero-text">6 Months Online/Offline</p>
 
-            <h1 class="h1 section-title">
-              DIPLOMA IN HOSPITAL<span class="span">ADMINISTRATION MANAGEMENT</span>
-            </h1>
+              <a href="#contact" class="btn has-before">
+                <span class="span">Join Now</span>
 
-            <p class="hero-text">
-              6 Months Online/Offline
-            </p>
+                <ion-icon
+                  name="arrow-forward-outline"
+                  aria-hidden="true"
+                ></ion-icon>
+              </a>
+            </div>
 
-            <a href="#contact" class="btn has-before">
-              <span class="span">Join Now</span>
+            <figure class="hero-banner">
+              <div class="img-holder one" style="--width: 270; --height: 300">
+                <img
+                  src="./assets/images/team-2.jpg"
+                  width="270"
+                  height="300"
+                  alt="hero banner"
+                  class="img-cover"
+                />
+              </div>
 
-              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-            </a>
+              <div class="img-holder two" style="--width: 240; --height: 370">
+                <img
+                  src="./assets/images/bg-doctor.png"
+                  width="240"
+                  height="370"
+                  alt="hero banner"
+                  class="img-cover"
+                />
+              </div>
 
+              <img
+                src="./assets/images/hero-shape-2.png"
+                width="622"
+                height="551"
+                alt=""
+                class="shape hero-shape-2"
+              />
+            </figure>
           </div>
+        </section>
 
-          <figure class="hero-banner">
-
-            <div class="img-holder one" style="--width: 270; --height: 300;">
-              <img src="./assets/images/team-2.jpg" width="270" height="300" alt="hero banner" class="img-cover">
-            </div>
-
-            <div class="img-holder two" style="--width: 240; --height: 370;">
-              <img src="./assets/images/bg-doctor.png" width="240" height="370" alt="hero banner" class="img-cover">
-            </div>
-
-
-
-            <img src="./assets/images/hero-shape-2.png" width="622" height="551" alt="" class="shape hero-shape-2">
-
-          </figure>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
+        <!-- 
         - #Corse
       -->
 
-      <section class="section category" aria-label="course" id="courses">
-        <div class="container">
+        <section class="section category" aria-label="course" id="courses">
+          <div class="container">
+            <h2 class="h2 section-title" style="margin-bottom: 30px">
+              Online <span class="span">Classes</span> For Remote Learning.
+            </h2>
 
+            <ul class="grid-list">
+              <li>
+                <div class="category-card" style="--color: 170, 75%, 41%">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/category-1.svg"
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                      alt="Online Degree Programs"
+                      class="img"
+                    />
+                  </div>
 
-          <h2 class="h2 section-title" style="margin-bottom: 30px;">
-            Online <span class="span">Classes</span> For Remote Learning.
-          </h2>
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Class room training</a>
+                  </h3>
 
+                  <p class="card-text">
+                    Comprehensive learning sessions that bridge theory and
+                    practice, empowering you with the hands-on skills needed to
+                    thrive in the dynamic healthcare landscape.
+                  </p>
 
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="category-card" style="--color: 170, 75%, 41%">
-
-                <div class="card-icon">
-                  <img src="./assets/images/category-1.svg" width="40" height="40" loading="lazy"
-                    alt="Online Degree Programs" class="img">
+                  <span class="card-badge">4 months</span>
                 </div>
+              </li>
 
-                <h3 class="h3">
-                  <a href="#" class="card-title">Class room training</a>
-                </h3>
+              <li>
+                <div class="category-card" style="--color: 351, 83%, 61%">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/category-2.svg"
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                      alt="Non-Degree Programs"
+                      class="img"
+                    />
+                  </div>
 
-                <p class="card-text">
-                  Comprehensive learning sessions that bridge theory and practice, empowering you with the hands-on skills needed to thrive in the dynamic healthcare landscape.
-                </p>
+                  <h3 class="h3">
+                    <a href="#" class="card-title"
+                      >Virtual Hospital Environment</a
+                    >
+                  </h3>
 
-                <span class="card-badge">4 months</span>
+                  <p class="card-text">
+                    Virtual Hospital Environment in Hospital Management. Immerse
+                    yourself in a cutting-edge virtual classroom where theory
+                    meets reality.
+                  </p>
 
-              </div>
-            </li>
-
-            <li>
-              <div class="category-card" style="--color: 351, 83%, 61%">
-
-                <div class="card-icon">
-                  <img src="./assets/images/category-2.svg" width="40" height="40" loading="lazy"
-                    alt="Non-Degree Programs" class="img">
+                  <span class="card-badge">1 Months</span>
                 </div>
+              </li>
 
-                <h3 class="h3">
-                  <a href="#" class="card-title">Virtual Hospital Environment</a>
-                </h3>
+              <li>
+                <div class="category-card" style="--color: 229, 75%, 58%">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/category-3.svg"
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                      alt="Off-Campus Programs"
+                      class="img"
+                    />
+                  </div>
 
-                <p class="card-text">
-                  Virtual Hospital Environment in Hospital Management. Immerse yourself in a cutting-edge virtual classroom where theory meets reality.
-                </p>
+                  <h3 class="h3">
+                    <a href="#" class="card-title"
+                      >On-Site(Hospital)-Internship</a
+                    >
+                  </h3>
 
-                <span class="card-badge">1 Months</span>
+                  <p class="card-text">
+                    Elevate your learning experience by gaining practical
+                    insights through hands-on hospital internships.
+                  </p>
 
-              </div>
-            </li>
-
-            <li>
-              <div class="category-card" style="--color: 229, 75%, 58%">
-
-                <div class="card-icon">
-                  <img src="./assets/images/category-3.svg" width="40" height="40" loading="lazy"
-                    alt="Off-Campus Programs" class="img">
+                  <span class="card-badge">1 Months</span>
                 </div>
+              </li>
 
-                <h3 class="h3">
-                  <a href="#" class="card-title">On-Site(Hospital)-Internship</a>
-                </h3>
+              <li>
+                <div class="category-card" style="--color: 42, 94%, 55%">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/category-4.svg"
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                      alt="Hybrid Distance Programs"
+                      class="img"
+                    />
+                  </div>
 
-                <p class="card-text">
-                  Elevate your learning experience by gaining practical insights through hands-on hospital internships. 
-                </p>
+                  <h3 class="h3">
+                    <a href="#" class="card-title"
+                      >Hospital Administration Management Certificate</a
+                    >
+                  </h3>
 
-                <span class="card-badge">1 Months</span>
+                  <p class="card-text">
+                    Join our comprehensive program designed to provide you with
+                    essential skills and knowledge in hospital administration.
+                    In just 6 months.
+                  </p>
 
-              </div>
-            </li>
-
-            <li>
-              <div class="category-card" style="--color: 42, 94%, 55%">
-
-                <div class="card-icon">
-                  <img src="./assets/images/category-4.svg" width="40" height="40" loading="lazy"
-                    alt="Hybrid Distance Programs" class="img">
+                  <span class="card-badge">6 Months</span>
                 </div>
+              </li>
+            </ul>
+          </div>
+        </section>
 
-                <h3 class="h3">
-                  <a href="#" class="card-title">Hospital Administration Management Certificate</a>
-                </h3>
-
-                <p class="card-text">
-                  Join our comprehensive program designed to provide you with essential skills and knowledge in hospital administration. In just 6 months.
-                </p>
-
-                <span class="card-badge">6 Months</span>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
+        <!-- 
         - #ABOUT
       -->
 
-      <section class="section about" id="about" aria-label="about">
-        <div class="container">
-
-          <figure class="about-banner">
-
-            <div class="img-holder" id="img-holder">
-              <div class="img-box">
-                <img src="./assets//images/certificate.jpeg" alt="">
+        <section class="section about" id="about" aria-label="about">
+          <div class="container">
+            <figure class="about-banner">
+              <div class="img-holder" id="img-holder">
+                <div class="img-box">
+                  <img src="./assets//images/certificate.jpeg" alt="" />
+                </div>
               </div>
+
+              <img
+                src="./assets/images/about-shape-3.png"
+                width="722"
+                height="528"
+                loading="lazy"
+                alt=""
+                class="shape about-shape-3"
+              />
+            </figure>
+
+            <div class="about-content">
+              <p class="section-subtitle">About Us</p>
+
+              <h2 class="h2 section-title">
+                Camerinfolks Is The<span class="span">Fastest Growing</span
+                >Training Institute in Kerala
+              </h2>
+              <p class="section-text">
+                Our mission at Camerinfolks is to offer an educational
+                experience that balances theoretical understanding and practical
+                knowledge. We aim to provide comprehensive training programs
+                that foster creativity, innovation, and problem-solving
+                abilities in students.
+              </p>
+
+              <ul class="about-list">
+                <li class="about-item">
+                  <ion-icon
+                    name="checkmark-done-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
+
+                  <span class="span">Expert Trainers</span>
+                </li>
+
+                <li class="about-item">
+                  <ion-icon
+                    name="checkmark-done-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
+
+                  <span class="span">Collabrative Environment</span>
+                </li>
+
+                <li class="about-item">
+                  <ion-icon
+                    name="checkmark-done-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
+
+                  <span class="span">Industry-Relevent Courses</span>
+                </li>
+              </ul>
+
+              <img
+                src="./assets/images/about-shape-4.svg"
+                width="100"
+                height="100"
+                loading="lazy"
+                alt=""
+                class="shape about-shape-4"
+              />
             </div>
-
-            <img src="./assets/images/about-shape-3.png" width="722" height="528" loading="lazy" alt=""
-              class="shape about-shape-3">
-
-          </figure>
-
-          <div class="about-content">
-
-            <p class="section-subtitle">About Us</p>
-
-            <h2 class="h2 section-title">
-              Camerinfolks Is The<span class="span">Fastest Growing</span>Training Institute in Kerala
-            </h2>
-            <p class="section-text">
-              Our mission at Camerinfolks is to offer an educational experience that balances theoretical understanding
-              and practical knowledge. We aim to provide comprehensive training programs that foster creativity,
-              innovation, and problem-solving abilities in students.
-            </p>
-
-            <ul class="about-list">
-
-              <li class="about-item">
-                <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
-
-                <span class="span">Expert Trainers</span>
-              </li>
-
-              <li class="about-item">
-                <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
-
-                <span class="span">Collabrative Environment</span>
-              </li>
-
-              <li class="about-item">
-                <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
-
-                <span class="span">Industry-Relevent Courses</span>
-              </li>
-
-            </ul>
-
-            <img src="./assets/images/about-shape-4.svg" width="100" height="100" loading="lazy" alt=""
-              class="shape about-shape-4">
-
           </div>
+        </section>
 
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
+        <!-- 
         - #why choose us
       -->
 
-      <section class="section course" aria-label="course">
-        <div class="container">
+        <section class="section course" aria-label="course">
+          <div class="container">
+            <h2 class="h2 section-title">Why Choose Us</h2>
 
-
-          <h2 class="h2 section-title">Why Choose Us</h2>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="course-card">
-                <div class="why-box">
-                  <div class="why-icon-box"><ion-icon class="why-icon" name="calendar-outline"></ion-icon></div>
-                  <div id="why-content-box">
-                    <h3 class="h3"><a>Experienced Faculty</a></h3>
-                    <p class="card-text">Learn from industry experts with years of experience in their respective
-                      fields.</p>
+            <ul class="grid-list">
+              <li>
+                <div class="course-card">
+                  <div class="why-box">
+                    <div class="why-icon-box">
+                      <ion-icon
+                        class="why-icon"
+                        name="calendar-outline"
+                      ></ion-icon>
+                    </div>
+                    <div id="why-content-box">
+                      <h3 class="h3"><a>Experienced Faculty</a></h3>
+                      <p class="card-text">
+                        Learn from industry experts with years of experience in
+                        their respective fields.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div class="course-card">
-                <div class="why-box">
-                  <div class="why-icon-box"><ion-icon class="why-icon" name="business-outline"></ion-icon></div>
-                  <div id="why-content-box">
-                    <h3 class="h3"><a>Practical Learning</a></h3>
-                    <p class="card-text">We focus on hands-on learning to tackle real-world challenges.</p>
+              </li>
+              <li>
+                <div class="course-card">
+                  <div class="why-box">
+                    <div class="why-icon-box">
+                      <ion-icon
+                        class="why-icon"
+                        name="business-outline"
+                      ></ion-icon>
+                    </div>
+                    <div id="why-content-box">
+                      <h3 class="h3"><a>Practical Learning</a></h3>
+                      <p class="card-text">
+                        We focus on hands-on learning to tackle real-world
+                        challenges.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div class="course-card">
-                <div class="why-box">
-                  <div class="why-icon-box"><ion-icon class="why-icon" name="timer-outline"></ion-icon></div>
-                  <div id="why-content-box">
-                    <h3 class="h3"><a>Career Support</a></h3>
-                    <p class="card-text">We offer personalized guidance to land your dream job.</p>
+              </li>
+              <li>
+                <div class="course-card">
+                  <div class="why-box">
+                    <div class="why-icon-box">
+                      <ion-icon
+                        class="why-icon"
+                        name="timer-outline"
+                      ></ion-icon>
+                    </div>
+                    <div id="why-content-box">
+                      <h3 class="h3"><a>Career Support</a></h3>
+                      <p class="card-text">
+                        We offer personalized guidance to land your dream job.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </li>
+              </li>
+            </ul>
+          </div>
+        </section>
 
-
-
-          </ul>
-
-
-        </div>
-      </section>
-
-
-
-
-      <!-- 
+        <!-- 
         - #VIDEO
       -->
 
-      <section class="video has-bg-image" aria-label="video"
-      style="background-image: url('./assets/images/video-bg.png')">
-      <div class="container">
-        <div class="life-his-section">
-          <div class="lifehs-first">
-            <div class="lifehis-img">
-              <img src="./assets/images/lifehislogo.png" alt="">
+        <section
+          class="video has-bg-image"
+          aria-label="video"
+          style="background-image: url('./assets/images/video-bg.png')"
+        >
+          <div class="container">
+            <div class="life-his-section">
+              <div class="lifehs-first">
+                <div class="lifehis-img">
+                  <img src="./assets/images/lifehislogo.png" alt="" />
+                </div>
+                <h2 class="lifehis-h2">
+                  Hands On Practical Training<span class="span"
+                    >In A Virtual Hospital Environment</span
+                  >
+                </h2>
+                <p>
+                  LIFE HIS is an exemplary solution with unabridged features to
+                  untangle all your healthcare needs at a cost that provides the
+                  fastest ROI. LIFE is designed to assimilate an appropriate
+                  blend of clinical and commercial aspects.
+                </p>
+              </div>
             </div>
-            <h2 class="lifehis-h2">
-              Hands On Practical Training<span class="span">In A
-                Virtual Hospital Environment</span>
-            </h2>
-            <p>LIFE HIS is an exemplary solution with unabridged features to
-              untangle all your healthcare needs at a cost that provides the
-              fastest ROI. LIFE is designed to assimilate an appropriate blend of
-              clinical and commercial aspects.</p>
+          </div>
+        </section>
 
+        <!-- 
+        - #draggable company logogs
+      -->
+        <div class="company-logos">
+          <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+              <li class="card">
+                <div class="img">
+                  <img
+                    src="./assets/images/draggable-log1.jpg"
+                    alt="img"
+                    draggable="false"
+                  />
+                </div>
+              </li>
+              <li class="card">
+                <div class="img">
+                  <img
+                    src="./assets/images/draggable-log2.jpg"
+                    alt="img"
+                    draggable="false"
+                  />
+                </div>
+              </li>
+              <li class="card">
+                <div class="img">
+                  <img
+                    src="./assets/images/draggable-log3.jpg"
+                    alt="img"
+                    draggable="false"
+                  />
+                </div>
+              </li>
+              <li class="card">
+                <div class="img">
+                  <img
+                    src="./assets/images/draggable-log4.png"
+                    alt="img"
+                    draggable="false"
+                  />
+                </div>
+              </li>
+              <li class="card">
+                <div class="img">
+                  <img
+                    src="./assets/images/draggable-log5.jpg"
+                    alt="img"
+                    draggable="false"
+                  />
+                </div>
+              </li>
+              <li class="card">
+                <div class="img">
+                  <img
+                    src="./assets/images/draggable-log6.jpg"
+                    alt="img"
+                    draggable="false"
+                  />
+                </div>
+              </li>
+              <li class="card">
+                <div class="img">
+                  <img
+                    src="./assets/images/draggable-log7.jpg"
+                    alt="img"
+                    draggable="false"
+                  />
+                </div>
+              </li>
+              <li class="card">
+                <div class="img">
+                  <img
+                    src="./assets/images/draggable-log8.png"
+                    alt="img"
+                    draggable="false"
+                  />
+                </div>
+              </li>
+              <li class="card">
+                <div class="img">
+                  <img
+                    src="./assets/images/draggable-log9.jpg"
+                    alt="img"
+                    draggable="false"
+                  />
+                </div>
+              </li>
+              <li class="card">
+                <div class="img">
+                  <img
+                    src="./assets/images/draggable-log10.png"
+                    alt="img"
+                    draggable="false"
+                  />
+                </div>
+              </li>
+              <li class="card">
+                <div class="img">
+                  <img
+                    src="./assets/images/draggable-log11.png"
+                    alt="img"
+                    draggable="false"
+                  />
+                </div>
+              </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
           </div>
         </div>
 
-
-
-      </div>
-    </section>
-
-
-
-
-      <!-- 
-        - #draggable company logogs
-      -->
-      <div class="company-logos ">
-        <div class="wrapper">
-          <i id="left" class="fa-solid fa-angle-left"></i>
-          <ul class="carousel">
-            <li class="card">
-              <div class="img"><img src="./assets/images/draggable-log1.jpg" alt="img" draggable="false"></div>
-            </li>
-            <li class="card">
-              <div class="img"><img src="./assets/images/draggable-log2.jpg" alt="img" draggable="false"></div>
-            </li>
-            <li class="card">
-              <div class="img"><img src="./assets/images/draggable-log3.jpg" alt="img" draggable="false"></div>
-            </li>
-            <li class="card">
-              <div class="img"><img src="./assets/images/draggable-log4.png" alt="img" draggable="false"></div>
-            </li>
-            <li class="card">
-              <div class="img"><img src="./assets/images/draggable-log5.jpg" alt="img" draggable="false"></div>
-            </li>
-            <li class="card">
-              <div class="img"><img src="./assets/images/draggable-log6.jpg" alt="img" draggable="false"></div>
-            </li>
-            <li class="card">
-              <div class="img"><img src="./assets/images/draggable-log7.jpg" alt="img" draggable="false"></div>
-            </li>
-            <li class="card">
-              <div class="img"><img src="./assets/images/draggable-log8.png" alt="img" draggable="false"></div>
-            </li>
-            <li class="card">
-              <div class="img"><img src="./assets/images/draggable-log9.jpg" alt="img" draggable="false"></div>
-            </li>
-            <li class="card">
-              <div class="img"><img src="./assets/images/draggable-log10.png" alt="img" draggable="false"></div>
-            </li>
-            <li class="card">
-              <div class="img"><img src="./assets/images/draggable-log11.png" alt="img" draggable="false"></div>
-            </li>
-
-          </ul>
-          <i id="right" class="fa-solid fa-angle-right"></i>
-        </div>
-      </div>
-
-
-
-
-      <!-- 
+        <!-- 
         - #contact
       -->
 
-      <section class="section blog has-bg-image" id="contact" aria-label="blog"
-        style="background-image: url('./assets/images/blog-bg.svg')">
-        <div class="container">
-
-
-
-          <h2 class="h2 section-title">GET IN TOUCH WITH US</h2>
-          <div class="contact-section">
-            <div class="contact-details">
-
+        <section
+          class="section blog has-bg-image"
+          id="contact"
+          aria-label="blog"
+          style="background-image: url('./assets/images/blog-bg.svg')"
+        >
+          <div class="container">
+            <h2 class="h2 section-title">GET IN TOUCH WITH US</h2>
+            <div class="contact-section">
+              <div class="contact-details"></div>
+              <div class="contact-form-container">
+                <form method="post" action="" name="gform" class="contact-form">
+                  <div>
+                    <input
+                      type="text"
+                      name="your-name"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="text"
+                      name="your-number"
+                      placeholder="Number"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="email"
+                      name="your-email"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <textarea
+                      name="message"
+                      id=""
+                      cols="30"
+                      rows="10"
+                      placeholder="Your Message"
+                    ></textarea>
+                  </div>
+                  <button
+                    class="form-submit"
+                    type="submit"
+                    id="submit"
+                    value="Submit"
+                  >
+                    send
+                  </button>
+                </form>
+              </div>
             </div>
-            <div class="contact-form-container">
-              <form method="post" action="" name="gform" class="contact-form">
-                <div>
-                  <input type="text" name="your-name" placeholder="Name" required>
-                </div>
-                <div>
-                  <input type="text" name="your-number" placeholder="Number" required>
-                </div>
-                <div>
-                  <input type="email" name="your-email" placeholder="Email" required>
-                </div>
-                <div>
-                  <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                </div>
-                <button class="form-submit" type="submit" id="submit" value="Submit">send</button>
-              </form>
-            </div>
+
+            <img
+              src="./assets/images/blog-shape.png"
+              height="186"
+              loading="lazy"
+              alt=""
+              class="shape blog-shape"
+            />
           </div>
+        </section>
+      </article>
+    </main>
 
-
-          <img src="./assets/images/blog-shape.png" height="186" loading="lazy" alt="" class="shape blog-shape">
-
-        </div>
-      </section>
-
-
-    </article>
-  </main>
-
-
-
-
-
-  <!-- 
+    <!-- 
     - #FOOTER
   -->
 
-  <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
+    <footer
+      class="footer"
+      style="background-image: url('./assets/images/footer-bg.png')"
+    >
+      <div class="footer-top" id="footer-top">
+        <div class="footer-grid">
+          <div class="footer-brand" id="footer-brand">
+            <a href="#">
+              <img
+                class="main-logo"
+                src="./assets/images/logo_trasperent.png"
+                width="162"
+                height="50"
+                alt="EduWeb logo"
+              />
+            </a>
 
-    <div class="footer-top" id="footer-top">
-      <div class="footer-grid">
-
-        <div class="footer-brand" id="footer-brand">
-
-          <a href="#">
-            <img class="main-logo" src="./assets/images/logo_trasperent.png" width="162" height="50" alt="EduWeb logo">
-          </a>
+            <ul class="footer-list first-section">
+              <li>
+                <a href="#about"><p>About Us</p></a>
+              </li>
+              <a href=""><li>Settings</li></a>
+              <li class="social-icon">
+                <a
+                  href="https://www.instagram.com/camerin_spark?igsh=ZGNjOWZkYTE3MQ=="
+                  ><img src="./assets/images/instagram.png" alt=""
+                /></a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61552068332302&mibextid=eHce3h"
+                  ><img src="./assets//images//facebook.png" alt=""
+                /></a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=co.diaz.qsuvb"
+                >
+                  <img src="./assets/images/play-store-icon.png" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
 
           <ul class="footer-list first-section">
+            <li>
+              <img src="./assets/images/call-icon.png" alt="" />
+              <p>8089042226, 7736421092</p>
+            </li>
 
             <li>
-              <a href="#about"><p>About Us</p></a>
-            </li>
-            <a href=""><li>Settings</li></a>
-            <li class="social-icon"><a href="https://www.instagram.com/camerin_spark?igsh=ZGNjOWZkYTE3MQ=="><img src="./assets/images/instagram.png"
-                  alt=""></a>
-              <a href="https://www.facebook.com/profile.php?id=61552068332302&mibextid=eHce3h"><img src="./assets//images//facebook.png" alt=""></a>
-              <a href="https://www.youtube.com/@"> <img src="./assets/images/youtube.png" alt=""></a>
-              <img src="./assets/images/play-store-icon.png" alt="">
+              <img src="./assets/images/email-icon.png" alt="" />
+              <p>info@camerinspark.com</p>
             </li>
 
-
+            <li>
+              <img src="./assets/images/address-icon.png" alt="" />
+              <p>
+                2nd Floor, Yohannans Image Center, Seaport - Airport
+                Rd,Kakkanad, Kerala 682037
+              </p>
+            </li>
           </ul>
-
-
-
-        </div>
-
-        <ul class="footer-list first-section">
-
-          <li>
-            <img src="./assets/images/call-icon.png" alt="">
-            <p>
-              8089042226, 7736421092</p>
-          </li>
-
-          <li>
-            <img src="./assets/images/email-icon.png" alt="">
-            <p>info@camerinspark.com</p>
-          </li>
-
-          <li>
-            <img src="./assets/images/address-icon.png" alt="">
-            <p>
-              2nd Floor, Yohannans Image Center, Seaport - Airport Rd,Kakkanad, Kerala 682037</p>
-          </li>
-
-
-        </ul>
-        <!-- 
+          <!-- 
         <ul class="footer-list second-section">
 
         </ul> -->
-
-
+        </div>
       </div>
-    </div>
+    </footer>
 
-  </footer>
-
-
-
-
-
-  <!-- 
+    <!-- 
     - #BACK TO TOP
   -->
 
+    <div>
+      <a class="whatsapp-icon" href="https://wa.me/8089042226" whatsapp-btn
+        ><img src="./assets/images/whatsapp.png" alt=""
+      /></a>
+    </div>
 
-  <div>
-    <a class="whatsapp-icon" href="https://wa.me/8089042226" whatsapp-btn><img src="./assets/images/whatsapp.png"
-        alt=""></a>
-  </div>
-
-
-
-
-
-  <!-- 
+    <!-- 
     - custom js link
   -->
-  <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/script.js" defer></script>
 
-  <!-- 
+    <!-- 
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
